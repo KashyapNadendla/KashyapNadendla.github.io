@@ -1,168 +1,211 @@
-/* Simple styling for the portfolio */
+/* Minimal, dhaitz-inspired style */
 
-/* Reset some default browser styles */
+/* GLOBAL RESETS AND FONTS */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-/* Body and general text styling */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background: #f7f8fa;
+html, body {
+  font-family: 'Inter', sans-serif;
   color: #333;
+  scroll-behavior: smooth; /* optional if you want to rely on pure CSS for smooth scroll */
 }
 
-/* Navigation */
-header {
-  background: #0d1117;
-  color: #fff;
+/* NAVIGATION BAR */
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: #fefefe;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 99;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
   padding: 1rem 2rem;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
+.navbar-links li {
+  margin-left: 1.5rem;
 }
 
-.nav-links li a {
-  color: #fff;
+.navbar-links a {
   text-decoration: none;
-  font-weight: 500;
+  color: #333;
+  font-weight: 600;
 }
 
-.logo {
-  float: left;
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-/* Hero Section */
+/* HERO SECTION */
 .hero {
-  background: url('https://via.placeholder.com/1600x600?text=Banner+Image') no-repeat center/cover;
-  min-height: 70vh;
+  background: #eff3f6; /* subtle background color */
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #ffffff;
-  padding: 0 2rem;
+  padding: 2rem;
+  /* Push hero below the navbar */
+  margin-top: 60px;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-title {
+  font-size: 2.2rem;
   margin-bottom: 1rem;
 }
 
-.hero p {
+.hero-subtitle {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: #555;
 }
 
-.cta-btn {
-  background: #ff6700;
-  color: #fff;
-  padding: 0.8rem 1.2rem;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Section Headings */
-section h2 {
-  text-align: center;
-  margin: 2rem 0 1rem;
-  font-size: 1.8rem;
-}
-
-/* About Section */
-.about {
-  background: #fff;
-  padding: 2rem;
-}
-
-/* Projects Section */
-.projects {
-  padding: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-
-.project-card {
-  background: #ffffff;
-  border-radius: 5px;
-  padding: 1.5rem;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-}
-
-.project-card h3 {
-  margin-bottom: 0.5rem;
-}
-
-.project-card p {
-  margin-bottom: 1rem;
-}
-
-.project-card a {
+.cta {
   display: inline-block;
-  background: #0070f3;
-  color: #ffffff;
-  padding: 0.5rem 1rem;
+  background: #2f72da;
+  color: white;
+  padding: 0.8rem 1.4rem;
   border-radius: 4px;
   text-decoration: none;
   font-weight: 600;
 }
 
-/* Skills Section */
-.skills {
-  background: #fff;
-  padding: 2rem;
+/* SECTION STYLES */
+.section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.skills ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
+/* SECTION CONTENT WRAPPER */
+.section-content {
+  margin-top: 1rem;
 }
 
-/* Experience Section */
-.experience {
-  padding: 2rem;
-}
-
-.experience-item {
+.section h2 {
+  font-size: 1.8rem;
   margin-bottom: 1.5rem;
   text-align: center;
 }
 
-/* Contact Section */
-.contact {
-  background: #f0f0f0;
-  padding: 2rem;
+/* ABOUT SECTION */
+.about p {
   text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #444;
 }
 
+/* EXPERIENCE SECTION */
+.experience .timeline {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.timeline-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+  color: #2f72da;
+}
+
+.timeline-item span {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.timeline-item p {
+  line-height: 1.5;
+  color: #444;
+}
+
+/* PROJECTS SECTION */
+.projects .project-item {
+  margin-bottom: 2rem;
+}
+
+.projects .project-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #2f72da;
+}
+
+.projects .project-item p, .projects .project-item ul {
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+/* SKILLS SECTION */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.skills-grid span {
+  background: #2f72da;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* CONTACT SECTION */
 .contact ul {
   list-style: none;
   margin-top: 1rem;
+  text-align: center;
 }
 
-.contact ul li a {
-  color: #0070f3;
+.contact li {
+  margin-bottom: 0.5rem;
+}
+
+.contact a {
+  color: #2f72da;
   text-decoration: none;
 }
 
-/* Footer */
-footer {
-  background: #0d1117;
-  color: #fff;
+/* FOOTER */
+.footer {
   text-align: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    justify-content: center;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .timeline-item {
+    padding-left: 0;
+  }
 }
