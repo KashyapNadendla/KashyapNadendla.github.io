@@ -3,118 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kashyap Nadendla - Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Kashyap Nadendla</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
   <!-- Header -->
   <header class="header">
-    <div class="container">
-      <h1 class="name">Kashyap Nadendla</h1>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/kashyap-nadendla-3161081a5/" target="_blank" aria-label="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="mailto:kashyapnadendla@arizona.edu" aria-label="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a href="https://github.com/KashyapNadendla" target="_blank" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
+    <h1 class="name">Kashyap Nadendla</h1>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/kashyap-nadendla-3161081a5/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:kashyapnadendla@arizona.edu"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/KashyapNadendla" target="_blank"><i class="fab fa-github"></i></a>
     </div>
   </header>
 
-  <main class="container">
-    <!-- About Me -->
-    <section id="about" class="section about">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-content">
-        <p class="about-text">
-          I'm a Data Science graduate student at the University of Arizona, passionate about Artificial
-          Intelligence, NLP, and Computer Vision. I enjoy building AI-driven applications that solve
-          real-world problems, from chatbot integrations to machine learning models for healthcare.
+  <!-- About Me -->
+  <section id="about" class="section about">
+    <h2>About Me</h2>
+    <p>
+      I’m a Data Science graduate student at the University of Arizona, passionate about Artificial 
+      Intelligence, NLP, and Computer Vision. I enjoy building AI-driven applications that solve 
+      real-world problems, from chatbot integrations to machine learning models for healthcare.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section projects">
+    <h2>Projects</h2>
+
+    <!-- Data the Explorer -->
+    <div class="project">
+      <img src="data-the-explorer.png" alt="Data the Explorer">
+      <div class="project-info">
+        <h3>Data the Explorer</h3>
+        <p>
+          A Streamlit app for CSV-based data analysis that converts datasets to JSON, uses GPT-4o-mini 
+          to assess data quality, and provides model recommendations.
         </p>
+        <a href="https://data-the-explorer.streamlit.app" target="_blank">Live Demo</a>
       </div>
-    </section>
+    </div>
 
-    <!-- Projects -->
-    <section id="projects" class="section projects">
-      <h2 class="section-title">Featured Projects</h2>
-      
-      <!-- Project 1 -->
-      <article class="project-card">
-        <div class="project-media">
-          <img src="data-the-explorer.png" alt="Data the Explorer Interface" class="project-image">
-        </div>
-        <div class="project-content">
-          <h3 class="project-title">Data the Explorer</h3>
-          <p class="project-description">
-            A Streamlit app for CSV-based data analysis that converts datasets to JSON, uses GPT-4o-mini
-            to assess data quality, and provides model recommendations.
-          </p>
-          <a href="https://data-the-explorer.streamlit.app" class="project-link" target="_blank">View Live Demo</a>
-        </div>
-      </article>
-
-      <!-- Project 2 -->
-      <article class="project-card reverse">
-        <div class="project-media">
-          <img src="pneumonia-app.png" alt="Pneumonia Detection Interface" class="project-image">
-        </div>
-        <div class="project-content">
-          <h3 class="project-title">Computer Vision Pneumonia App</h3>
-          <p class="project-description">
-            A deep learning model using CNNs to detect pneumonia from X-ray images. Built with TensorFlow
-            and deployed using Streamlit for real-time predictions.
-          </p>
-          <a href="#" class="project-link" target="_blank">View on GitHub</a>
-        </div>
-      </article>
-
-      <!-- Project 3 -->
-      <article class="project-card">
-        <div class="project-media">
-          <video class="project-video" controls poster="video-poster.jpg">
-            <source src="ai-core-project.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div class="project-content">
-          <h3 class="project-title">AI Core Projects</h3>
-          <p class="project-description">
-            Led multiple AI-driven projects, including the Vault Learning platform,
-            multi-LLM chatbot, and computer vision-based Webcam GPT application.
-          </p>
-          <a href="#" class="project-link" target="_blank">Case Study</a>
-        </div>
-      </article>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="section skills">
-      <h2 class="section-title">Technical Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-item">Python</div>
-        <div class="skill-item">Machine Learning</div>
-        <div class="skill-item">TensorFlow</div>
-        <div class="skill-item">Deep Learning</div>
-        <div class="skill-item">Generative AI</div>
-        <div class="skill-item">LangChain</div>
-        <div class="skill-item">React</div>
-        <div class="skill-item">AWS</div>
-        <div class="skill-item">SQL</div>
-        <div class="skill-item">OpenAI API</div>
+    <!-- Computer Vision Pneumonia App -->
+    <div class="project">
+      <img src="pneumonia-app.png" alt="Pneumonia Detection App">
+      <div class="project-info">
+        <h3>Computer Vision Pneumonia App</h3>
+        <p>
+          A deep learning model using CNNs to detect pneumonia from X-ray images. Built with TensorFlow 
+          and deployed using Streamlit for real-time predictions.
+        </p>
+        <a href="#" target="_blank">GitHub Repo</a>
       </div>
-    </section>
-  </main>
+    </div>
+
+    <!-- AI Core Work -->
+    <div class="project">
+      <video controls>
+        <source src="ai-core-project.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="project-info">
+        <h3>AI Core Projects</h3>
+        <p>
+          Led multiple AI-driven projects, including the Vault Learning platform, 
+          multi-LLM chatbot, and computer vision-based Webcam GPT application.
+        </p>
+        <a href="#" target="_blank">More Details</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <span>Python</span>
+      <span>R</span>
+      <span>JavaScript</span>
+      <span>TypeScript</span>
+      <span>Machine Learning</span>
+      <span>Deep Learning</span>
+      <span>Generative AI</span>
+      <span>LangChain</span>
+      <span>React</span>
+      <span>Node.js</span>
+      <span>AWS</span>
+      <span>Azure</span>
+      <span>SQL</span>
+      <span>TensorFlow</span>
+      <span>OpenAI API</span>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <p class="copyright">&copy; 2025 Kashyap Nadendla. All rights reserved.</p>
-    </div>
+    <p>&copy; 2025 Kashyap Nadendla</p>
   </footer>
+
 </body>
 </html>
