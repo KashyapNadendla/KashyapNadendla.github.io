@@ -1,180 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kashyap Nadendla | Portfolio</title>
-  <!-- Import a Google Font (optional) -->
+  <title>Kashyap Nadendla</title>
+  <!-- Example Google Font (optional) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
+  <link 
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
     rel="stylesheet"
   >
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <ul class="navbar-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Header / Hero Section -->
-  <header class="hero">
-    <div class="hero-content">
-      <h1 class="hero-title">Hello, I'm Kashyap</h1>
-      <p class="hero-subtitle">
-        Graduate Student in Data Science, exploring AI & Computer Vision
-      </p>
-      <a href="#projects" class="cta">View My Work</a>
+  <!-- Header / Navigation -->
+  <header class="top-nav">
+    <div class="nav-content">
+      <a href="#" class="brand">Kashyap</a>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <!-- About Section -->
-  <section id="about" class="section about">
-    <div class="section-content">
-      <h2>About Me</h2>
+  <!-- Hero / Intro Section -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Hello, I'm Kashyap</h1>
       <p>
-        I'm a Data Science grad student at the University of Arizona with a passion for
-        AI-driven solutions. My interests range from building advanced chatbots to
-        developing computer vision apps that solve real-world problems.
+        I’m a Data Science graduate student passionate about Artificial Intelligence, 
+        NLP, and Computer Vision. Here you’ll find my work, experience, and 
+        how to get in touch.
       </p>
     </div>
   </section>
 
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <h2>About Me</h2>
+    <p>
+      Currently pursuing my MS in Data Science at the University of Arizona, 
+      I love exploring cutting-edge AI technologies and building practical 
+      solutions—from generative AI models to real-time computer vision applications.
+    </p>
+  </section>
+
   <!-- Experience Section -->
   <section id="experience" class="section experience">
-    <div class="section-content">
-      <h2>Experience</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <h3>Product Lead / AI Engineer, AI Core</h3>
-          <span>Jan 2025 – Present</span>
-          <p>
-            Leading multiple AI-driven projects, including a research-focused chatbot,
-            XR AI initiatives, and marketing optimizations for the University of Arizona.
-          </p>
-        </div>
-        <div class="timeline-item">
-          <h3>AI Engineer, AI Core</h3>
-          <span>April 2024 – Dec 2024</span>
-          <p>
-            Developed educational platform Vault Learning, integrated GPT-4o, DALL-E, 
-            and TTS. Created multi-LLM Chatbot with RAG for advanced research queries.
-          </p>
-        </div>
-        <div class="timeline-item">
-          <h3>Software Engineer, LTI Mindtree</h3>
-          <span>April 2021 – Jul 2023</span>
-          <p>
-            Built full stack apps for sustainability scientists, integrated React/Redux 
-            frontends with REST APIs, and managed SQL databases.
-          </p>
-        </div>
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="job">
+        <h3>Product Lead / AI Engineer, AI Core</h3>
+        <span>Jan 2025 – Present</span>
+        <p>
+          Leading multiple AI-driven projects, including research chatbots, 
+          XR AI for tourism, and marketing optimizations at the University of Arizona.
+        </p>
+      </div>
+      <div class="job">
+        <h3>AI Engineer, AI Core</h3>
+        <span>Apr 2024 – Dec 2024</span>
+        <p>
+          Developed an educational platform (Vault Learning), integrated GPT-4o, 
+          DALL-E, and TTS. Built a chatbot with multi-LLM context switching.
+        </p>
+      </div>
+      <div class="job">
+        <h3>Software Engineer, LTI Mindtree</h3>
+        <span>Apr 2021 – Jul 2023</span>
+        <p>
+          Created custom full-stack applications for sustainability research, 
+          focusing on user-friendly React interfaces and REST APIs for 
+          scientific data.
+        </p>
       </div>
     </div>
   </section>
 
   <!-- Projects Section -->
   <section id="projects" class="section projects">
-    <div class="section-content">
-      <h2>Projects</h2>
-
-      <!-- Data the Explorer -->
-      <div class="project-item">
-        <h3>Data the Explorer</h3>
-        <p>
-          A Streamlit app for CSV-based data analysis that converts datasets to JSON and 
-          uses LangChain (GPT-4o-mini) to assess data quality (missing values, outliers) 
-          and recommend suitable ML models. Deployed here:
-          <a href="https://data-the-explorer.streamlit.app" target="_blank">Live Demo</a>
-        </p>
-      </div>
-
-      <!-- Computer Vision Pneumonia App -->
-      <div class="project-item">
-        <h3>Computer Vision Pneumonia App</h3>
-        <p>
-          A deep learning model using CNNs to detect pneumonia from chest X-ray images. 
-          Leveraged Python, TensorFlow, and Streamlit for real-time image predictions.
-        </p>
-      </div>
-
-      <!-- AI Core Work -->
-      <div class="project-item">
-        <h3>AI Core Projects</h3>
-        <ul>
-          <li><strong>Vault Learning:</strong> AI-powered app for children with learning
-              disabilities (TTS, GPT-4o, DALL-E).</li>
-          <li><strong>UofA Chatbot:</strong> Multi-LLM (GPT-4o, Gemini, Groq, Mistral)
-              pipeline for advanced research queries.</li>
-          <li><strong>Webcam GPT:</strong> Real-time computer vision for advanced
-              image-based Q&amp;A and generation.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section skills">
-    <div class="section-content">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <span>Python</span>
-        <span>R</span>
-        <span>JavaScript</span>
-        <span>TypeScript</span>
-        <span>Machine Learning</span>
-        <span>Generative AI</span>
-        <span>LangChain</span>
-        <span>ChromaDB</span>
-        <span>React</span>
-        <span>Node.js</span>
-        <span>AWS</span>
-        <span>Azure</span>
-        <span>GCP</span>
-        <!-- ...add more as needed -->
-      </div>
-    </div>
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <strong>Data the Explorer:</strong> A Streamlit app that analyzes CSVs, 
+        converts them to JSON, and leverages GPT-4o-mini to detect data issues 
+        (missing values, outliers). 
+        <a href="https://data-the-explorer.streamlit.app" target="_blank">Live Demo</a>
+      </li>
+      <li>
+        <strong>Computer Vision Pneumonia App:</strong> Deep learning (CNN) 
+        to detect pneumonia from X-ray images. Built a Streamlit interface 
+        for real-time predictions.
+      </li>
+      <li>
+        <strong>AI Core Work:</strong> Vault Learning, multi-LLM Chatbot, 
+        and Webcam GPT (image-based Q&A). Involves GPT-4o, Gemini, RAG 
+        pipelines, and advanced generative models.
+      </li>
+    </ul>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="section contact">
-    <div class="section-content">
-      <h2>Contact</h2>
-      <p>
-        If you'd like to collaborate or have any questions, get in touch!
-      </p>
-      <ul>
-        <li>Email: <a href="mailto:kashyapnadendla@arizona.edu">kashyapnadendla@arizona.edu</a></li>
-        <li>GitHub: <a href="https://github.com/KashyapNadendla" target="_blank">KashyapNadendla</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/kashyap-nadendla-3161081a5/" target="_blank">LinkedIn</a></li>
-      </ul>
-    </div>
+    <h2>Contact</h2>
+    <p>
+      Interested in collaborating or have any questions? Feel free to 
+      reach out using the channels below:
+    </p>
+    <ul>
+      <li>Email: <a href="mailto:kashyapnadendla@arizona.edu">kashyapnadendla@arizona.edu</a></li>
+      <li>GitHub: <a href="https://github.com/KashyapNadendla" target="_blank">@KashyapNadendla</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/kashyap-nadendla-3161081a5/" target="_blank">Kashyap Nadendla</a></li>
+    </ul>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    &copy; 2025 Kashyap Nadendla
+    <p>&copy; 2025 Kashyap Nadendla</p>
   </footer>
-
-  <!-- Smooth Scrolling Script (optional) -->
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      });
-    });
-  </script>
 
 </body>
 </html>
