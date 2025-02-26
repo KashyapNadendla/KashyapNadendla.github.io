@@ -1,211 +1,166 @@
-/* Minimal, dhaitz-inspired style */
+/* Minimal, 8jun-inspired styling */
 
-/* GLOBAL RESETS AND FONTS */
+/* GLOBAL RESETS */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html, body {
   font-family: 'Inter', sans-serif;
   color: #333;
-  scroll-behavior: smooth; /* optional if you want to rely on pure CSS for smooth scroll */
+  background: #fff;
+  line-height: 1.5;
 }
 
-/* NAVIGATION BAR */
-.navbar {
-  position: fixed;
-  width: 100%;
-  background: #fefefe;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+/* NAVIGATION */
+.top-nav {
+  background: #fff;
+  position: sticky;
+  top: 0;
   z-index: 99;
+  border-bottom: 1px solid #eee;
 }
 
-.navbar-links {
+.nav-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-content ul {
   list-style: none;
   display: flex;
-  justify-content: flex-end;
-  padding: 1rem 2rem;
+  gap: 1rem;
 }
 
-.navbar-links li {
-  margin-left: 1.5rem;
-}
-
-.navbar-links a {
+.nav-content li a {
   text-decoration: none;
-  color: #333;
-  font-weight: 600;
+  color: #666;
+  font-weight: 500;
 }
 
 /* HERO SECTION */
 .hero {
-  background: #eff3f6; /* subtle background color */
-  min-height: 100vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 2rem;
-  /* Push hero below the navbar */
-  margin-top: 60px;
+  border-bottom: 1px solid #eee;
 }
 
-.hero-content {
+.hero-inner {
   max-width: 600px;
 }
 
-.hero-title {
-  font-size: 2.2rem;
+.hero h1 {
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.hero-subtitle {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+.hero p {
+  font-size: 1.05rem;
   color: #555;
 }
 
-.cta {
-  display: inline-block;
-  background: #2f72da;
-  color: white;
-  padding: 0.8rem 1.4rem;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-/* SECTION STYLES */
+/* SECTIONS */
 .section {
-  padding: 4rem 2rem;
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto;
-}
-
-/* SECTION CONTENT WRAPPER */
-.section-content {
-  margin-top: 1rem;
+  padding: 3rem 1rem;
 }
 
 .section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-/* ABOUT SECTION */
+/* ABOUT */
 .about p {
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto;
+  color: #555;
   line-height: 1.6;
-  color: #444;
 }
 
-/* EXPERIENCE SECTION */
+/* EXPERIENCE */
 .experience .timeline {
   display: grid;
   gap: 2rem;
   margin-top: 2rem;
 }
 
-.timeline-item h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.2rem;
-  color: #2f72da;
+.experience .job h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.25rem;
 }
 
-.timeline-item span {
+.experience .job span {
   font-size: 0.9rem;
-  color: #777;
+  color: #999;
+  display: block;
   margin-bottom: 0.5rem;
-  display: inline-block;
 }
 
-.timeline-item p {
+/* PROJECTS */
+.projects ul {
+  list-style: none;
+  margin-top: 1.5rem;
+}
+
+.projects ul li {
+  margin-bottom: 1rem;
   line-height: 1.5;
-  color: #444;
 }
 
-/* PROJECTS SECTION */
-.projects .project-item {
-  margin-bottom: 2rem;
+.projects ul li a {
+  color: #2d5cdd;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-.projects .project-item h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: #2f72da;
-}
-
-.projects .project-item p, .projects .project-item ul {
-  line-height: 1.5;
-  margin-bottom: 0.5rem;
-}
-
-/* SKILLS SECTION */
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2rem;
-  justify-content: center;
-}
-
-.skills-grid span {
-  background: #2f72da;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-/* CONTACT SECTION */
+/* CONTACT */
 .contact ul {
   list-style: none;
-  margin-top: 1rem;
-  text-align: center;
+  margin-top: 1.5rem;
 }
 
-.contact li {
+.contact ul li {
   margin-bottom: 0.5rem;
-}
-
-.contact a {
-  color: #2f72da;
-  text-decoration: none;
 }
 
 /* FOOTER */
 .footer {
   text-align: center;
-  padding: 2rem 1rem;
-  color: #999;
+  padding: 1.5rem;
+  border-top: 1px solid #eee;
   font-size: 0.9rem;
+  color: #999;
 }
 
-/* RESPONSIVE DESIGN */
-@media screen and (max-width: 768px) {
-  .navbar-links {
-    justify-content: center;
-  }
-
-  .hero-title {
-    font-size: 1.8rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1rem;
-  }
-
-  .section h2 {
+/* RESPONSIVE */
+@media screen and (max-width: 600px) {
+  .hero h1 {
     font-size: 1.5rem;
   }
 
-  .timeline-item {
-    padding-left: 0;
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .timeline {
+    gap: 1rem;
   }
 }
