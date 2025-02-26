@@ -2,141 +2,179 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kashyap Nadendla | Portfolio</title>
+  <!-- Import a Google Font (optional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  >
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header Section -->
-  <header>
-    <nav>
-      <div class="logo">Kashyap Nadendla</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul class="navbar-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header / Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Hello, I'm Kashyap</h1>
+      <p class="hero-subtitle">
+        Graduate Student in Data Science, exploring AI & Computer Vision
+      </p>
+      <a href="#projects" class="cta">View My Work</a>
+    </div>
   </header>
 
-  <!-- Hero / Banner Section -->
-  <section class="hero">
-    <h1>Hello, I'm Kashyap</h1>
-    <p>A Graduate Student in Data Science passionate about AI, NLP, and Computer Vision</p>
-    <a href="#projects" class="cta-btn">View My Work</a>
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="section-content">
+      <h2>About Me</h2>
+      <p>
+        I'm a Data Science grad student at the University of Arizona with a passion for
+        AI-driven solutions. My interests range from building advanced chatbots to
+        developing computer vision apps that solve real-world problems.
+      </p>
+    </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-      I'm currently pursuing my MS in Data Science at The University of Arizona. 
-      I have experience building AI-driven solutions, ranging from chatbots to 
-      computer vision apps. My interests include Generative AI, LLMs, and exploring 
-      advanced methods to bring machine learning solutions to real-world problems.
-    </p>
+  <!-- Experience Section -->
+  <section id="experience" class="section experience">
+    <div class="section-content">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Product Lead / AI Engineer, AI Core</h3>
+          <span>Jan 2025 – Present</span>
+          <p>
+            Leading multiple AI-driven projects, including a research-focused chatbot,
+            XR AI initiatives, and marketing optimizations for the University of Arizona.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <h3>AI Engineer, AI Core</h3>
+          <span>April 2024 – Dec 2024</span>
+          <p>
+            Developed educational platform Vault Learning, integrated GPT-4o, DALL-E, 
+            and TTS. Created multi-LLM Chatbot with RAG for advanced research queries.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <h3>Software Engineer, LTI Mindtree</h3>
+          <span>April 2021 – Jul 2023</span>
+          <p>
+            Built full stack apps for sustainability scientists, integrated React/Redux 
+            frontends with REST APIs, and managed SQL databases.
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <h2>Featured Projects</h2>
+  <section id="projects" class="section projects">
+    <div class="section-content">
+      <h2>Projects</h2>
 
-    <!-- Data the Explorer -->
-    <div class="project-card">
-      <h3>Data the Explorer</h3>
-      <p>
-        A Streamlit app for CSV-based data analysis that converts datasets to JSON and 
-        leverages LangChain with GPT-4o-mini to assess data quality (missing values, 
-        inconsistencies). It recommends suitable models and creates LLM-powered 
-        interactive visualizations.
-      </p>
-      <a href="https://data-the-explorer.streamlit.app" target="_blank">
-        Live Demo
-      </a>
-    </div>
+      <!-- Data the Explorer -->
+      <div class="project-item">
+        <h3>Data the Explorer</h3>
+        <p>
+          A Streamlit app for CSV-based data analysis that converts datasets to JSON and 
+          uses LangChain (GPT-4o-mini) to assess data quality (missing values, outliers) 
+          and recommend suitable ML models. Deployed here:
+          <a href="https://data-the-explorer.streamlit.app" target="_blank">Live Demo</a>
+        </p>
+      </div>
 
-    <!-- Computer Vision Pneumonia App -->
-    <div class="project-card">
-      <h3>Computer Vision Pneumonia App</h3>
-      <p>
-        A deep learning application (using CNNs) to detect pneumonia from chest X-ray images. 
-        Utilized Python and TensorFlow for model building and Streamlit for a simple 
-        front-end interface. Achieved high accuracy and recall, helping medical practitioners 
-        with faster diagnosis.
-      </p>
-      <!-- If you have a live link, add it below -->
-      <a href="#" target="_blank">GitHub Repo / Demo</a>
-    </div>
+      <!-- Computer Vision Pneumonia App -->
+      <div class="project-item">
+        <h3>Computer Vision Pneumonia App</h3>
+        <p>
+          A deep learning model using CNNs to detect pneumonia from chest X-ray images. 
+          Leveraged Python, TensorFlow, and Streamlit for real-time image predictions.
+        </p>
+      </div>
 
-    <!-- AI Core Work -->
-    <div class="project-card">
-      <h3>AI Core Projects, University of Arizona</h3>
-      <p>
-        Served as Product Lead and AI Engineer, contributing to:
+      <!-- AI Core Work -->
+      <div class="project-item">
+        <h3>AI Core Projects</h3>
         <ul>
-          <li><strong>Vault Learning:</strong> Educational platform for children with 
-              learning disabilities (OpenAI’s TTS, GPT-4o, DALL-E).</li>
-          <li><strong>UofA Chatbot:</strong> Integrated multiple LLMs (GPT-4o, Gemini, 
-              Groq, Mistral) to deliver context-aware responses for research queries.</li>
-          <li><strong>Webcam GPT:</strong> Real-time computer vision with vision models 
-              in LLMs (image-based question answering).</li>
+          <li><strong>Vault Learning:</strong> AI-powered app for children with learning
+              disabilities (TTS, GPT-4o, DALL-E).</li>
+          <li><strong>UofA Chatbot:</strong> Multi-LLM (GPT-4o, Gemini, Groq, Mistral)
+              pipeline for advanced research queries.</li>
+          <li><strong>Webcam GPT:</strong> Real-time computer vision for advanced
+              image-based Q&amp;A and generation.</li>
         </ul>
-      </p>
-      <!-- If you have a dedicated link or blog post, add it below -->
-      <a href="#" target="_blank">More Details</a>
+      </div>
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="skills">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li>Python, R, JavaScript, TypeScript</li>
-      <li>Machine Learning, Deep Learning, Generative AI</li>
-      <li>LLMs, RAG, Vector Embeddings (LangChain, ChromaDB)</li>
-      <li>React, Node.js, Django</li>
-      <li>AWS, Azure, Google Vertex AI</li>
-      <li>NLP Tools: BERT, spaCy, Word2Vec, NLTK</li>
-      <li>Databases: SQL, MongoDB</li>
-    </ul>
-  </section>
-
-  <!-- Experience / Education Section -->
-  <section id="experience" class="experience">
-    <h2>Work & Education</h2>
-    <div class="experience-item">
-      <h3>Product Lead / AI Engineer, AI Core</h3>
-      <p>University of Arizona (2024 - Present)</p>
-    </div>
-    <div class="experience-item">
-      <h3>Software Engineer, LTI Mindtree</h3>
-      <p>(2021 - 2023)</p>
-    </div>
-    <div class="experience-item">
-      <h3>Masters in Data Science</h3>
-      <p>The University of Arizona (2023 - Present)</p>
+  <section id="skills" class="section skills">
+    <div class="section-content">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span>Python</span>
+        <span>R</span>
+        <span>JavaScript</span>
+        <span>TypeScript</span>
+        <span>Machine Learning</span>
+        <span>Generative AI</span>
+        <span>LangChain</span>
+        <span>ChromaDB</span>
+        <span>React</span>
+        <span>Node.js</span>
+        <span>AWS</span>
+        <span>Azure</span>
+        <span>GCP</span>
+        <!-- ...add more as needed -->
+      </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>
-      If you’d like to discuss any project or just want to say hi, feel free to 
-      reach out.
-    </p>
-    <ul>
-      <li>Email: <a href="mailto:kashyapnadendla@arizona.edu">kashyapnadendla@arizona.edu</a></li>
-      <li>GitHub: <a href="https://github.com/KashyapNadendla" target="_blank">KashyapNadendla</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/kashyap-nadendla-3161081a5/" target="_blank">LinkedIn Profile</a></li>
-    </ul>
+  <section id="contact" class="section contact">
+    <div class="section-content">
+      <h2>Contact</h2>
+      <p>
+        If you'd like to collaborate or have any questions, get in touch!
+      </p>
+      <ul>
+        <li>Email: <a href="mailto:kashyapnadendla@arizona.edu">kashyapnadendla@arizona.edu</a></li>
+        <li>GitHub: <a href="https://github.com/KashyapNadendla" target="_blank">KashyapNadendla</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/kashyap-nadendla-3161081a5/" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Kashyap Nadendla. All Rights Reserved.</p>
+  <footer class="footer">
+    &copy; 2025 Kashyap Nadendla
   </footer>
+
+  <!-- Smooth Scrolling Script (optional) -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
+
 </body>
 </html>
