@@ -33,25 +33,24 @@ body {
   background: var(--white);
   padding: 2rem 0;
   box-shadow: 0 2px 10px var(--shadow-light);
+  text-align: center;
 }
 
 /* Header Content */
 .header-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: left;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+  text-align: center;
 }
 
 /* Name & Social Links */
 .header-text {
-  text-align: left;
+  text-align: center;
 }
 
 .name {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--secondary-color);
   margin-bottom: 0.5rem;
@@ -59,8 +58,9 @@ body {
 
 .social-links {
   display: flex;
+  justify-content: center;
   gap: 1rem;
-  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .social-links a {
@@ -73,16 +73,17 @@ body {
   color: var(--primary-color);
 }
 
-/* Profile Image */
+/* Profile Image - Smaller & Positioned Below Name */
 .profile-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  margin-top: 0.5rem;
 }
 
 .profile-image {
-  width: 90px;
-  height: 90px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--primary-color);
@@ -272,7 +273,7 @@ body {
   }
 
   .name {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .skills-grid {
@@ -280,7 +281,7 @@ body {
   }
 
   .profile-image {
-    width: 80px;
-    height: 80px;
+    width: 55px;
+    height: 55px;
   }
 }
